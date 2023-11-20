@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Proyecto de Aimar Fernández Elgueta y Diego Benito Sanchíz">
+   <meta name="keywords" content="novedades futbolisticas, estilos de futbolistas, ropa de futbol, moda">
+   <meta name="author" content="Aimar Fernández Elgueta, Diego Benito Sanchíz">
+   <title>StreetStriker</title>
+   
+   <link rel="icon" href="favicon.png" type="image/x-icon" sizes="16x16 32x32 48x48">
+
+   
+  <link rel="stylesheet" href="estilo.css">
+    
+<style>
+    body {
+    background-color: rgb(226, 217, 217);
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    
+ }
+ header {
+    background-color: black;
+    color: rgb(240, 218, 190);
+    float: left;
+    border: 0.1 px solid black;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    height: 1%;
+    font-family:'Times New Roman', Times, serif
+ }
+ img {
+    width: 200px;
+    height: 100px;
+    float: left
+ }
+
+ #logo {
+    display: flex;
+    height: 20%;
+    width: 28%;
+    float: left;
+ }
+
+ .container {
+    display: flex;
+    margin: 0px;
+ }
+
+ .box {
+    width: 100%;
+    height: 100px;
+    /* Ajusta la altura según tus necesidades */
+    background-color: rgb(63, 26, 63);
+    float: left;
+   
+ }
+ .menu-container {
+ display: flex;
+ gap: 10px;
+ justify-content: center;
+ background-color: black;
+}
+
+/* Estilo para los selects */
+.select-container {
+ position: relative;
+ max-width: 505px; /* Establece un ancho máximo para evitar que los selects sean demasiado anchos */
+ width: 100%;
+ background-color: black;
+}
+ul {
+ list-style-type: none;
+ padding: 0;
+
+}
+
+li {
+ margin-bottom: 10px;
+}
+
+/* Estilo para la caja del select */
+.select-box {
+width: 100%;
+padding: 10px;
+border: 0px solid #ccc;
+
+background-color: #070202;
+cursor: pointer;
+position: relative;
+z-index: 1;
+color: bisque;
+}
+
+/* Estilo para la lista desplegable */
+.select-options {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+max-width: 505px; /* Ajusta el ancho máximo de la lista desplegable */
+border: 1px solid #ccc;
+border-top: none;
+border-radius: 0 0 20px 10px; /* Ajusta el valor según desees un borde más o menos redondo */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+background-color: #000000;
+color: bisque;
+z-index: 2;
+}
+
+
+
+
+
+
+
+/* Estilo para la flecha desplegable */
+.select-arrow {
+ position: absolute;
+ top: 50%;
+ right: 10px;
+ transform: translateY(-50%);
+}
+
+/* Estilo para la lista desplegable */
+
+
+
+/* Estilo para los elementos de la lista desplegable */
+.select-option {
+ padding: 10px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+}
+
+.select-option:hover {
+ background-color: #f0f0f0;
+}
+
+/* Estilo para los enlaces dentro de las opciones */
+.select-option a {
+ text-decoration: none;
+ color: inherit;
+ display: block;
+ width: 100%;
+ height: 100%;
+ font-size: 12px;
+}
+.image-box img {
+ max-width: 505px;
+ max-height: 100%;
+ object-fit: cover;
+}
+
+.image-box-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px; /* Reducido el margen superior */
+    }
+
+
+    .image-box {
+      border-radius: 9px;
+      flex: 1;
+      margin: 5px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 70%; /* Reducido el padding-bottom */
+    }
+
+.image-box img {
+ border-radius: 15px;
+ position: absolute;
+ width: 100%;
+ height: 40%;
+ object-fit: cover;
+}
+.arrow {
+ position: absolute;
+ bottom: -20px;
+ left: 50%;
+ transform: translateX(-50%);
+ font-size: 20px;}
+ ul {
+ list-style-type: none;
+ padding: 0;
+}
+
+li {
+ margin-bottom: 10px;
+}
+
+.images-container {
+ text-align: center;
+}
+
+.contact-info {
+ text-align: center;
+ margin-top: 20px;
+}
+</style>
+</head>
+
+
+<body>
+
+   <header>
+      STREET STRIKER &copy;
+   </header>
+
+   </br>
+
+   <div class="container">
+      <div class="box"></div>
+      <div id="logo">
+         <img src="trabajo-lenguajes.jpg">
+      </div>
+      <div class="box"></div>
+
+   </div>
+   <div class="menu-container">
+      <div class="select-container">
+        <div class="select-box">
+          FÚTBOL
+          <div class="select-arrow">&#9662;</div>
+        </div>
+        <div class="select-options">
+          <div class="select-option"><a href="https://www.futbolemotion.com/">-ROPA DEPORTIVA</a></div>
+          
+        </div>
+      </div>
+  
+      <div class="select-container">
+        <div class="select-box">
+          ROPA
+          <div class="select-arrow">&#9662;</div>
+        </div>
+        <div class="select-options">
+          <div class="select-option"><a href="https://www.scuffers.es/">-CAMISETAS Y SUDADERAS</a></div>
+          <div class="select-option"><a href="https://edhardyeurope.com/">-PARTES DE ABAJO</a></div>
+          <div class="select-option"><a href="https://stockx.com/es-es">-ZAPATILLAS</a></div>
+        </div>
+      </div>
+  
+      <div class="select-container">
+        <div class="select-box">
+          NOVEDADES
+          <div class="select-arrow">&#9662;</div>
+        </div>
+        <div class="select-options">
+          <div class="select-option"><a href="https://www.mundodeportivo.com/">-ACTUALIDAD FUTBOLÍSTICA</a></div>
+          <div class="select-option"><a href="opcion2novedades.html">-ESTILOS DE FUTBOLISTAS</a></div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="image-box-container" id="imageBoxContainer">
+      <div class="image-box">
+        <a href="moda.jpg"><img src="moda.jpg" alt="Imagen 1"></a>
+      </div>
+     
+      <div class="image-box">
+        <a href="periodico.jpg"><img src="periodico.jpg" alt="Imagen 3"></a>
+      </div>
+      <div class="image-box">
+        <a href="neymar.jpg"><img src="neymar.jpg" alt="Imagen 4"></a>
+      </div>
+      
+      <div class="image-box">
+        <a href="botas.jpg"><img src="botas.jpg" alt="Imagen 6"></a>
+      </div>
+    </div>
+   
+   <footer>
+    <ul>
+      <li>->Calle futbolitos,28,Madrid,España</li>
+      <li>->Teléfono: +34 673 24 98</li>
+      <li>->Correo Electrónico: streetstriker@gmail.com</li>
+    </ul>
+   </footer>
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+       // Obtén todos los elementos .select-container
+       var selectContainers = document.querySelectorAll('.select-container');
+
+       // Función para mostrar las opciones
+       function showOptions(selectOptions) {
+          selectOptions.style.display = 'block';
+       }
+
+       // Función para cerrar las opciones
+       function closeOptions(selectOptions) {
+          selectOptions.style.display = 'none';
+       }
+
+       // Itera sobre cada .select-container
+       selectContainers.forEach(function (selectContainer) {
+          var selectBox = selectContainer.querySelector('.select-box');
+          var selectOptions = selectContainer.querySelector('.select-options');
+
+          // Evento al pasar el ratón por encima del select
+          selectContainer.addEventListener('mouseover', function () {
+             showOptions(selectOptions);
+          });
+
+          // Evento al salir del área del select o de las opciones
+          selectContainer.addEventListener('mouseout', function (event) {
+             if (!selectContainer.contains(event.relatedTarget) && !selectOptions.contains(event.relatedTarget)) {
+                closeOptions(selectOptions);
+             }
+          });
+
+          // Cierra las opciones si se hace clic fuera de ellas
+          document.addEventListener('click', function (event) {
+             // Verifica que el clic no sea en la flecha ni en ninguna subopción
+             if (event.target !== selectBox && !selectOptions.contains(event.target)) {
+                closeOptions(selectOptions);
+             }
+          });
+       });
+    });
+  
+ </script>
+  
+</body>
+
+</html>
